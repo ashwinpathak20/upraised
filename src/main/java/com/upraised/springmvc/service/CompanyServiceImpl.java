@@ -1,0 +1,59 @@
+package com.upraised.springmvc.service;
+
+import com.upraised.springmvc.dao.CompanyDao;
+import com.upraised.springmvc.model.Company;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.ArrayList;
+import java.util.List;
+
+@Component
+@Service("companyService")
+@Transactional
+public class CompanyServiceImpl implements CompanyService{
+
+    @Autowired
+    private CompanyDao dao;
+
+    public Company findById(int id) {
+        return dao.findById(id);
+    }
+
+    public void saveCompany(Company company) {
+        dao.saveCompany(company);
+    }
+
+    public void deleteCompanyByName(String name) { dao.deleteCompanyByName(name); }
+
+    public List<Company> findAllCompanies() {
+        return dao.findAllCompanies();
+    }
+
+    /*
+     *  This method finds company by name.
+     */
+    public Company findCompanyByName(String name) {
+        Company company = dao.findCompanyByName(name);
+        return company;
+    }
+
+    public boolean isCompanyByNameUnique(Integer id, String name) {
+        Company company = findCompanyByName(name);
+        return ( company == null || ((id != null) && (company.getId() == id)));
+    }
+
+    /*
+     * This method lists companies.
+     */
+    public List<String> listCompaniesByName() {
+        List<Company> companies = findAllCompanies();
+        List<String> company_names = new ArrayList<>();
+        for (Company company:companies) {
+            company_names.add(company.getName());
+        }
+        return company_names;
+    }
+}
