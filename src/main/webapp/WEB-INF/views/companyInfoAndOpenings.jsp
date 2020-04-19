@@ -80,11 +80,12 @@
                         <h3>Openings</h3>
                         <ul>
                             <c:forEach items="${openings}" var="opening">
-                                <li>${opening.job_id} | ${opening.job_title}</li>
+                                <li><a href="<c:url value='/edit-${opening.job_id}-opening' />">${opening.job_id} </a>| ${opening.job_title}</li>
                                 <p>${opening.seniority_level} | ${opening.location} | ${opening.job_link}</p>
                                 <p>${opening.postingDate} | ${opening.salary}</p>
                                 <p>${opening.job_description}</p>
                                 <p>${opening.skills_required}</p>
+                                <p><a href="<c:url value='/delete-${opening.job_id}-opening' />">delete</a></p>
                             </c:forEach>
                         </ul>
                     </div>

@@ -6,13 +6,14 @@ import javax.persistence.*;
 import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-import java.sql.Blob;
+
+import static com.upraised.springmvc.commons.CompanyConstants.*;
 
 /*
  * This model is for Company.
  */
 @Entity
-@Table(name="Company")
+@Table(name=TABLE_COMPANY)
 public class Company {
 
     @Id
@@ -21,48 +22,48 @@ public class Company {
 
     @NotNull
     @Size(min=3, max=50)
-    @Column(name = "name")
+    @Column(name = NAME)
     private String name;
 
     @NotNull
     @Size(min=3, max=50)
-    @Column(name = "company_type")
+    @Column(name = COMPANY_TYPE)
     private String company_type;
 
     @NotNull
     @Size(min=3, max=50)
-    @Column(name = "location")
+    @Column(name = LOCATION)
     private String location;
 
-    @Column(name = "founder_name")
+    @Column(name = FOUNDER_NAME)
     private String founder_name;
 
-    @Column(name = "founder_desc")
+    @Column(name = FOUNDER_DESC)
     private String founder_desc;
 
-    @Column(name = "company_desc")
+    @Column(name = COMPANY_DESC)
     private String company_desc;
 
-    @URL(regexp = "^(http://|ftp://|https://)(www).*.*")
-    @Column(name = "company_link")
+    @URL(regexp = REGEX)
+    @Column(name = COMPANY_LINK)
     private String company_link;
 
-    @Column(name = "intro")
+    @Column(name = INTRO)
     private String intro;
 
-    @Column(name = "domain")
+    @Column(name = DOMAIN)
     private String domain;
 
     @Digits(integer=12, fraction=0)
-    @Column(name = "employees_min")
+    @Column(name = EMPLOYEES_MIN)
     private int employees_min;
 
     @Digits(integer=12, fraction=0)
-    @Column(name = "employees_max")
+    @Column(name = EMPLOYEES_MAX)
     private int employees_max;
 
     @Lob @Basic(fetch = FetchType.LAZY)
-    @Column(name="logo")
+    @Column(name = LOGO)
     private byte[] logo;
 
     public int getId() {

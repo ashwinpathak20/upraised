@@ -11,11 +11,13 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.math.BigDecimal;
 
+import static com.upraised.springmvc.commons.OpeningsConstants.*;
+
 /*
  * This model stores the openings information.
  */
 @Entity
-@Table(name="Openings")
+@Table(name=OPENINGS)
 public class Openings {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,42 +25,42 @@ public class Openings {
 
     @NotNull
     @Digits(integer=12, fraction=0)
-    @Column(name = "job_id")
+    @Column(name = JOB_ID)
     private Integer job_id;
 
     @NotNull
     @Size(min=3, max=50)
-    @Column(name = "job_title", nullable = false)
+    @Column(name = JOB_TITLE, nullable = false)
     private String job_title;
 
-    @Column(name = "seniority_level")
+    @Column(name = SENIORITY_LEVEL)
     private String seniority_level;
 
-    @Column(name = "location", nullable = false)
+    @Column(name = LOCATION, nullable = false)
     private String location;
 
-    @Column(name = "job_description")
+    @Column(name = JOB_DESCRIPTION)
     private String job_description;
 
-    @Column(name = "skills_required")
+    @Column(name = SKILLS_REQUIRED)
     private String skills_required;
 
-    @Column(name = "job_link")
-    @URL(regexp = "^(http://|ftp://|https://)(www).*.*")
+    @Column(name = JOB_LINK)
+    @URL(regexp = REGEX)
     private String job_link;
 
-    @DateTimeFormat(pattern="dd/MM/yyyy")
-    @Column(name = "date_of_posting", nullable = false)
-    @Type(type="org.jadira.usertype.dateandtime.joda.PersistentLocalDate")
+    @DateTimeFormat(pattern=DATE_PATTERN)
+    @Column(name = DATE_OF_POSTING, nullable = false)
+    @Type(type=DATE_TYPE)
     private LocalDate postingDate;
 
     @Digits(integer=12, fraction=2)
-    @Column(name = "salary")
+    @Column(name = SALARY)
     private BigDecimal salary;
 
     @NotNull
     @Size(min=1, max=50)
-    @Column(name = "company", nullable = false)
+    @Column(name = COMPANY, nullable = false)
     private String company;
 
     public int getId() {

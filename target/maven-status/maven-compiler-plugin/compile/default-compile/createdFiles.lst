@@ -2,6 +2,7 @@ com/upraised/springmvc/dao/OpeningsDao.class
 com/upraised/springmvc/dao/OpeningsDaoImpl.class
 com/upraised/springmvc/dao/AbstractDao.class
 com/upraised/springmvc/dao/CompanyDao.class
+com/upraised/springmvc/commons/CompanyConstants.class
 com/upraised/springmvc/service/CompanyService.class
 com/upraised/springmvc/service/CompanyServiceImpl.class
 com/upraised/springmvc/dao/CompanyDaoImpl.class
@@ -11,6 +12,7 @@ com/upraised/springmvc/configuration/AppInitializer.class
 com/upraised/springmvc/configuration/HibernateConfiguration.class
 com/upraised/springmvc/configuration/AppConfig.class
 com/upraised/springmvc/model/Openings.class
+com/upraised/springmvc/commons/OpeningsConstants.class
 com/upraised/springmvc/controller/AppController.class
 com/upraised/springmvc/service/OpeningsServiceImpl.class
 com/upraised/springmvc/model/Filters.class

@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="43" passed="43" failed="0" skipped="0">
+<testng-results total="45" passed="45" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-04-19T09:56:45Z" name="Command line suite" finished-at="2020-04-19T09:56:50Z" duration-ms="4815">
+  <suite started-at="2020-04-19T18:01:13Z" name="Command line suite" finished-at="2020-04-19T18:01:17Z" duration-ms="4527">
     <groups>
     </groups>
-    <test started-at="2020-04-19T09:56:45Z" name="Command line test" finished-at="2020-04-19T09:56:50Z" duration-ms="4815">
+    <test started-at="2020-04-19T18:01:13Z" name="Command line test" finished-at="2020-04-19T18:01:17Z" duration-ms="4527">
       <class name="com.upraised.springmvc.dao.CompanyDaoImplTest">
-        <test-method is-config="true" signature="springTestContextBeforeTestClass()[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@2f7c2f4f]" started-at="2020-04-19T15:26:46Z" name="springTestContextBeforeTestClass" finished-at="2020-04-19T15:26:46Z" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="springTestContextBeforeTestClass()[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@ef9296d]" started-at="2020-04-19T23:31:13Z" name="springTestContextBeforeTestClass" finished-at="2020-04-19T23:31:13Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextBeforeTestClass -->
-        <test-method is-config="true" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@2f7c2f4f]" started-at="2020-04-19T15:26:46Z" name="springTestContextPrepareTestInstance" finished-at="2020-04-19T15:26:49Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" duration-ms="3656" status="PASS">
+        <test-method is-config="true" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@ef9296d]" started-at="2020-04-19T23:31:13Z" name="springTestContextPrepareTestInstance" finished-at="2020-04-19T23:31:16Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" duration-ms="3195" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextPrepareTestInstance -->
-        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@2f7c2f4f]" started-at="2020-04-19T15:26:49Z" name="springTestContextBeforeTestMethod" finished-at="2020-04-19T15:26:49Z" duration-ms="67" status="PASS">
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@ef9296d]" started-at="2020-04-19T23:31:16Z" name="springTestContextBeforeTestMethod" finished-at="2020-04-19T23:31:16Z" duration-ms="78" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,15 +26,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextBeforeTestMethod -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@2f7c2f4f]" started-at="2020-04-19T15:26:49Z" name="setUp" finished-at="2020-04-19T15:26:50Z" duration-ms="322" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@ef9296d]" started-at="2020-04-19T23:31:16Z" name="setUp" finished-at="2020-04-19T23:31:17Z" duration-ms="379" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="deleteCompanyByInvalidName()[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@2f7c2f4f]" started-at="2020-04-19T15:26:50Z" name="deleteCompanyByInvalidName" finished-at="2020-04-19T15:26:50Z" duration-ms="102" status="PASS">
+        <test-method signature="deleteCompanyByInvalidName()[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@ef9296d]" started-at="2020-04-19T23:31:17Z" name="deleteCompanyByInvalidName" finished-at="2020-04-19T23:31:17Z" duration-ms="101" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteCompanyByInvalidName -->
-        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@2f7c2f4f]" started-at="2020-04-19T15:26:50Z" name="springTestContextAfterTestMethod" finished-at="2020-04-19T15:26:50Z" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@ef9296d]" started-at="2020-04-19T23:31:17Z" name="springTestContextAfterTestMethod" finished-at="2020-04-19T23:31:17Z" duration-ms="6" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -45,7 +45,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextAfterTestMethod -->
-        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@2f7c2f4f]" started-at="2020-04-19T15:26:50Z" name="springTestContextBeforeTestMethod" finished-at="2020-04-19T15:26:50Z" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@ef9296d]" started-at="2020-04-19T23:31:17Z" name="springTestContextBeforeTestMethod" finished-at="2020-04-19T23:31:17Z" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -56,15 +56,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextBeforeTestMethod -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@2f7c2f4f]" started-at="2020-04-19T15:26:50Z" name="setUp" finished-at="2020-04-19T15:26:50Z" duration-ms="15" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@ef9296d]" started-at="2020-04-19T23:31:17Z" name="setUp" finished-at="2020-04-19T23:31:17Z" duration-ms="20" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="deleteCompanyByName()[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@2f7c2f4f]" started-at="2020-04-19T15:26:50Z" name="deleteCompanyByName" finished-at="2020-04-19T15:26:50Z" duration-ms="4" status="PASS">
+        <test-method signature="deleteCompanyByName()[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@ef9296d]" started-at="2020-04-19T23:31:17Z" name="deleteCompanyByName" finished-at="2020-04-19T23:31:17Z" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteCompanyByName -->
-        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@2f7c2f4f]" started-at="2020-04-19T15:26:50Z" name="springTestContextAfterTestMethod" finished-at="2020-04-19T15:26:50Z" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@ef9296d]" started-at="2020-04-19T23:31:17Z" name="springTestContextAfterTestMethod" finished-at="2020-04-19T23:31:17Z" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -75,7 +75,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextAfterTestMethod -->
-        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@2f7c2f4f]" started-at="2020-04-19T15:26:50Z" name="springTestContextBeforeTestMethod" finished-at="2020-04-19T15:26:50Z" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@ef9296d]" started-at="2020-04-19T23:31:17Z" name="springTestContextBeforeTestMethod" finished-at="2020-04-19T23:31:17Z" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -86,15 +86,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextBeforeTestMethod -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@2f7c2f4f]" started-at="2020-04-19T15:26:50Z" name="setUp" finished-at="2020-04-19T15:26:50Z" duration-ms="11" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@ef9296d]" started-at="2020-04-19T23:31:17Z" name="setUp" finished-at="2020-04-19T23:31:17Z" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="findAllCompanies()[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@2f7c2f4f]" started-at="2020-04-19T15:26:50Z" name="findAllCompanies" finished-at="2020-04-19T15:26:50Z" duration-ms="4" status="PASS">
+        <test-method signature="findAllCompanies()[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@ef9296d]" started-at="2020-04-19T23:31:17Z" name="findAllCompanies" finished-at="2020-04-19T23:31:17Z" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findAllCompanies -->
-        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@2f7c2f4f]" started-at="2020-04-19T15:26:50Z" name="springTestContextAfterTestMethod" finished-at="2020-04-19T15:26:50Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@ef9296d]" started-at="2020-04-19T23:31:17Z" name="springTestContextAfterTestMethod" finished-at="2020-04-19T23:31:17Z" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -105,7 +105,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextAfterTestMethod -->
-        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@2f7c2f4f]" started-at="2020-04-19T15:26:50Z" name="springTestContextBeforeTestMethod" finished-at="2020-04-19T15:26:50Z" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@ef9296d]" started-at="2020-04-19T23:31:17Z" name="springTestContextBeforeTestMethod" finished-at="2020-04-19T23:31:17Z" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -116,15 +116,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextBeforeTestMethod -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@2f7c2f4f]" started-at="2020-04-19T15:26:50Z" name="setUp" finished-at="2020-04-19T15:26:50Z" duration-ms="13" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@ef9296d]" started-at="2020-04-19T23:31:17Z" name="setUp" finished-at="2020-04-19T23:31:17Z" duration-ms="16" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="findById()[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@2f7c2f4f]" started-at="2020-04-19T15:26:50Z" name="findById" finished-at="2020-04-19T15:26:50Z" duration-ms="12" status="PASS">
+        <test-method signature="findById()[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@ef9296d]" started-at="2020-04-19T23:31:17Z" name="findById" finished-at="2020-04-19T23:31:17Z" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findById -->
-        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@2f7c2f4f]" started-at="2020-04-19T15:26:50Z" name="springTestContextAfterTestMethod" finished-at="2020-04-19T15:26:50Z" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@ef9296d]" started-at="2020-04-19T23:31:17Z" name="springTestContextAfterTestMethod" finished-at="2020-04-19T23:31:17Z" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -135,7 +135,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextAfterTestMethod -->
-        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@2f7c2f4f]" started-at="2020-04-19T15:26:50Z" name="springTestContextBeforeTestMethod" finished-at="2020-04-19T15:26:50Z" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@ef9296d]" started-at="2020-04-19T23:31:17Z" name="springTestContextBeforeTestMethod" finished-at="2020-04-19T23:31:17Z" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -146,15 +146,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextBeforeTestMethod -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@2f7c2f4f]" started-at="2020-04-19T15:26:50Z" name="setUp" finished-at="2020-04-19T15:26:50Z" duration-ms="14" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@ef9296d]" started-at="2020-04-19T23:31:17Z" name="setUp" finished-at="2020-04-19T23:31:17Z" duration-ms="18" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="findCompanyByName()[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@2f7c2f4f]" started-at="2020-04-19T15:26:50Z" name="findCompanyByName" finished-at="2020-04-19T15:26:50Z" duration-ms="11" status="PASS">
+        <test-method signature="findCompanyByName()[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@ef9296d]" started-at="2020-04-19T23:31:17Z" name="findCompanyByName" finished-at="2020-04-19T23:31:17Z" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findCompanyByName -->
-        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@2f7c2f4f]" started-at="2020-04-19T15:26:50Z" name="springTestContextAfterTestMethod" finished-at="2020-04-19T15:26:50Z" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@ef9296d]" started-at="2020-04-19T23:31:17Z" name="springTestContextAfterTestMethod" finished-at="2020-04-19T23:31:17Z" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -165,7 +165,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextAfterTestMethod -->
-        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@2f7c2f4f]" started-at="2020-04-19T15:26:50Z" name="springTestContextBeforeTestMethod" finished-at="2020-04-19T15:26:50Z" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@ef9296d]" started-at="2020-04-19T23:31:17Z" name="springTestContextBeforeTestMethod" finished-at="2020-04-19T23:31:17Z" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -176,15 +176,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextBeforeTestMethod -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@2f7c2f4f]" started-at="2020-04-19T15:26:50Z" name="setUp" finished-at="2020-04-19T15:26:50Z" duration-ms="15" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@ef9296d]" started-at="2020-04-19T23:31:17Z" name="setUp" finished-at="2020-04-19T23:31:17Z" duration-ms="16" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="saveCompany()[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@2f7c2f4f]" started-at="2020-04-19T15:26:50Z" name="saveCompany" finished-at="2020-04-19T15:26:50Z" duration-ms="18" status="PASS">
+        <test-method signature="saveCompany()[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@ef9296d]" started-at="2020-04-19T23:31:17Z" name="saveCompany" finished-at="2020-04-19T23:31:17Z" duration-ms="20" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- saveCompany -->
-        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@2f7c2f4f]" started-at="2020-04-19T15:26:50Z" name="springTestContextAfterTestMethod" finished-at="2020-04-19T15:26:50Z" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@ef9296d]" started-at="2020-04-19T23:31:17Z" name="springTestContextAfterTestMethod" finished-at="2020-04-19T23:31:17Z" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -195,173 +195,181 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextAfterTestMethod -->
-        <test-method is-config="true" signature="springTestContextAfterTestClass()[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@2f7c2f4f]" started-at="2020-04-19T15:26:50Z" name="springTestContextAfterTestClass" finished-at="2020-04-19T15:26:50Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="springTestContextAfterTestClass()[pri:0, instance:com.upraised.springmvc.dao.CompanyDaoImplTest@ef9296d]" started-at="2020-04-19T23:31:17Z" name="springTestContextAfterTestClass" finished-at="2020-04-19T23:31:17Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextAfterTestClass -->
       </class> <!-- com.upraised.springmvc.dao.CompanyDaoImplTest -->
       <class name="com.upraised.springmvc.service.OpeningsServiceImplTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.upraised.springmvc.service.OpeningsServiceImplTest@794cb805]" started-at="2020-04-19T15:26:50Z" name="setUp" finished-at="2020-04-19T15:26:50Z" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.upraised.springmvc.service.OpeningsServiceImplTest@59d016c9]" started-at="2020-04-19T23:31:17Z" name="setUp" finished-at="2020-04-19T23:31:17Z" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="deleteOpeningsByJobId()[pri:0, instance:com.upraised.springmvc.service.OpeningsServiceImplTest@794cb805]" started-at="2020-04-19T15:26:50Z" name="deleteOpeningsByJobId" finished-at="2020-04-19T15:26:50Z" duration-ms="1" status="PASS">
+        <test-method signature="deleteOpeningsByJobId()[pri:0, instance:com.upraised.springmvc.service.OpeningsServiceImplTest@59d016c9]" started-at="2020-04-19T23:31:17Z" name="deleteOpeningsByJobId" finished-at="2020-04-19T23:31:17Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteOpeningsByJobId -->
-        <test-method signature="findAllOpenings()[pri:0, instance:com.upraised.springmvc.service.OpeningsServiceImplTest@794cb805]" started-at="2020-04-19T15:26:50Z" name="findAllOpenings" finished-at="2020-04-19T15:26:50Z" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- findAllOpenings -->
-        <test-method signature="filterOpenings()[pri:0, instance:com.upraised.springmvc.service.OpeningsServiceImplTest@794cb805]" started-at="2020-04-19T15:26:50Z" name="filterOpenings" finished-at="2020-04-19T15:26:50Z" duration-ms="0" status="PASS">
+        <test-method signature="filterOpenings()[pri:0, instance:com.upraised.springmvc.service.OpeningsServiceImplTest@59d016c9]" started-at="2020-04-19T23:31:17Z" name="filterOpenings" finished-at="2020-04-19T23:31:17Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- filterOpenings -->
-        <test-method signature="findById()[pri:0, instance:com.upraised.springmvc.service.OpeningsServiceImplTest@794cb805]" started-at="2020-04-19T15:26:50Z" name="findById" finished-at="2020-04-19T15:26:50Z" duration-ms="1" status="PASS">
+        <test-method signature="findAllOpenings()[pri:0, instance:com.upraised.springmvc.service.OpeningsServiceImplTest@59d016c9]" started-at="2020-04-19T23:31:17Z" name="findAllOpenings" finished-at="2020-04-19T23:31:17Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findAllOpenings -->
+        <test-method signature="findById()[pri:0, instance:com.upraised.springmvc.service.OpeningsServiceImplTest@59d016c9]" started-at="2020-04-19T23:31:17Z" name="findById" finished-at="2020-04-19T23:31:17Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findById -->
-        <test-method signature="findOpeningsByCompany()[pri:0, instance:com.upraised.springmvc.service.OpeningsServiceImplTest@794cb805]" started-at="2020-04-19T15:26:50Z" name="findOpeningsByCompany" finished-at="2020-04-19T15:26:50Z" duration-ms="0" status="PASS">
+        <test-method signature="findOpeningsByCompany()[pri:0, instance:com.upraised.springmvc.service.OpeningsServiceImplTest@59d016c9]" started-at="2020-04-19T23:31:17Z" name="findOpeningsByCompany" finished-at="2020-04-19T23:31:17Z" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findOpeningsByCompany -->
-        <test-method signature="findOpeningsByJobId()[pri:0, instance:com.upraised.springmvc.service.OpeningsServiceImplTest@794cb805]" started-at="2020-04-19T15:26:50Z" name="findOpeningsByJobId" finished-at="2020-04-19T15:26:50Z" duration-ms="0" status="PASS">
+        <test-method signature="findOpeningsByJobId()[pri:0, instance:com.upraised.springmvc.service.OpeningsServiceImplTest@59d016c9]" started-at="2020-04-19T23:31:17Z" name="findOpeningsByJobId" finished-at="2020-04-19T23:31:17Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findOpeningsByJobId -->
-        <test-method signature="isOpeningsByJobIdUnique()[pri:0, instance:com.upraised.springmvc.service.OpeningsServiceImplTest@794cb805]" started-at="2020-04-19T15:26:50Z" name="isOpeningsByJobIdUnique" finished-at="2020-04-19T15:26:50Z" duration-ms="0" status="PASS">
+        <test-method signature="isOpeningsByJobIdUnique()[pri:0, instance:com.upraised.springmvc.service.OpeningsServiceImplTest@59d016c9]" started-at="2020-04-19T23:31:17Z" name="isOpeningsByJobIdUnique" finished-at="2020-04-19T23:31:17Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isOpeningsByJobIdUnique -->
-        <test-method signature="saveOpenings()[pri:0, instance:com.upraised.springmvc.service.OpeningsServiceImplTest@794cb805]" started-at="2020-04-19T15:26:50Z" name="saveOpenings" finished-at="2020-04-19T15:26:50Z" duration-ms="0" status="PASS">
+        <test-method signature="saveOpenings()[pri:0, instance:com.upraised.springmvc.service.OpeningsServiceImplTest@59d016c9]" started-at="2020-04-19T23:31:17Z" name="saveOpenings" finished-at="2020-04-19T23:31:17Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- saveOpenings -->
-        <test-method signature="updateOpenings()[pri:0, instance:com.upraised.springmvc.service.OpeningsServiceImplTest@794cb805]" started-at="2020-04-19T15:26:50Z" name="updateOpenings" finished-at="2020-04-19T15:26:50Z" duration-ms="1" status="PASS">
+        <test-method signature="updateOpenings()[pri:0, instance:com.upraised.springmvc.service.OpeningsServiceImplTest@59d016c9]" started-at="2020-04-19T23:31:17Z" name="updateOpenings" finished-at="2020-04-19T23:31:17Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateOpenings -->
       </class> <!-- com.upraised.springmvc.service.OpeningsServiceImplTest -->
       <class name="com.upraised.springmvc.controller.AppControllerTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.upraised.springmvc.controller.AppControllerTest@7880cdf3]" started-at="2020-04-19T15:26:45Z" name="setUp" finished-at="2020-04-19T15:26:46Z" duration-ms="384" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.upraised.springmvc.controller.AppControllerTest@1c93084c]" started-at="2020-04-19T23:31:13Z" name="setUp" finished-at="2020-04-19T23:31:13Z" duration-ms="441" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="deleteOpening()[pri:0, instance:com.upraised.springmvc.controller.AppControllerTest@7880cdf3]" started-at="2020-04-19T15:26:46Z" name="deleteOpening" finished-at="2020-04-19T15:26:46Z" duration-ms="8" status="PASS">
+        <test-method signature="deleteOpening()[pri:0, instance:com.upraised.springmvc.controller.AppControllerTest@1c93084c]" started-at="2020-04-19T23:31:13Z" name="deleteOpening" finished-at="2020-04-19T23:31:13Z" duration-ms="25" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteOpening -->
-        <test-method signature="editCompanyandTitle()[pri:0, instance:com.upraised.springmvc.controller.AppControllerTest@7880cdf3]" started-at="2020-04-19T15:26:46Z" name="editCompanyandTitle" finished-at="2020-04-19T15:26:46Z" duration-ms="41" status="PASS">
+        <test-method signature="editCompanyandTitle()[pri:0, instance:com.upraised.springmvc.controller.AppControllerTest@1c93084c]" started-at="2020-04-19T23:31:13Z" name="editCompanyandTitle" finished-at="2020-04-19T23:31:13Z" duration-ms="41" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editCompanyandTitle -->
-        <test-method signature="getCompanies()[pri:0, instance:com.upraised.springmvc.controller.AppControllerTest@7880cdf3]" started-at="2020-04-19T15:26:46Z" name="getCompanies" finished-at="2020-04-19T15:26:46Z" duration-ms="4" status="PASS">
+        <test-method signature="getCompanies()[pri:0, instance:com.upraised.springmvc.controller.AppControllerTest@1c93084c]" started-at="2020-04-19T23:31:13Z" name="getCompanies" finished-at="2020-04-19T23:31:13Z" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getCompanies -->
-        <test-method signature="getCompanyAndOpeningsByName()[pri:0, instance:com.upraised.springmvc.controller.AppControllerTest@7880cdf3]" started-at="2020-04-19T15:26:46Z" name="getCompanyAndOpeningsByName" finished-at="2020-04-19T15:26:46Z" duration-ms="2" status="PASS">
+        <test-method signature="getCompanyAndOpeningsByName()[pri:0, instance:com.upraised.springmvc.controller.AppControllerTest@1c93084c]" started-at="2020-04-19T23:31:13Z" name="getCompanyAndOpeningsByName" finished-at="2020-04-19T23:31:13Z" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getCompanyAndOpeningsByName -->
-        <test-method signature="getOpeningsByFilterWithSuccess()[pri:0, instance:com.upraised.springmvc.controller.AppControllerTest@7880cdf3]" started-at="2020-04-19T15:26:46Z" name="getOpeningsByFilterWithSuccess" finished-at="2020-04-19T15:26:46Z" duration-ms="2" status="PASS">
+        <test-method signature="getOpeningsByFilterWithSuccess()[pri:0, instance:com.upraised.springmvc.controller.AppControllerTest@1c93084c]" started-at="2020-04-19T23:31:13Z" name="getOpeningsByFilterWithSuccess" finished-at="2020-04-19T23:31:13Z" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getOpeningsByFilterWithSuccess -->
-        <test-method signature="getOpeningsByFilterWithValidationError()[pri:0, instance:com.upraised.springmvc.controller.AppControllerTest@7880cdf3]" started-at="2020-04-19T15:26:46Z" name="getOpeningsByFilterWithValidationError" finished-at="2020-04-19T15:26:46Z" duration-ms="0" status="PASS">
+        <test-method signature="getOpeningsByFilterWithValidationError()[pri:0, instance:com.upraised.springmvc.controller.AppControllerTest@1c93084c]" started-at="2020-04-19T23:31:13Z" name="getOpeningsByFilterWithValidationError" finished-at="2020-04-19T23:31:13Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getOpeningsByFilterWithValidationError -->
-        <test-method signature="listOpenings()[pri:0, instance:com.upraised.springmvc.controller.AppControllerTest@7880cdf3]" started-at="2020-04-19T15:26:46Z" name="listOpenings" finished-at="2020-04-19T15:26:46Z" duration-ms="0" status="PASS">
+        <test-method signature="listOpenings()[pri:0, instance:com.upraised.springmvc.controller.AppControllerTest@1c93084c]" started-at="2020-04-19T23:31:13Z" name="listOpenings" finished-at="2020-04-19T23:31:13Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- listOpenings -->
-        <test-method signature="newCompany()[pri:0, instance:com.upraised.springmvc.controller.AppControllerTest@7880cdf3]" started-at="2020-04-19T15:26:46Z" name="newCompany" finished-at="2020-04-19T15:26:46Z" duration-ms="0" status="PASS">
+        <test-method signature="newCompany()[pri:0, instance:com.upraised.springmvc.controller.AppControllerTest@1c93084c]" started-at="2020-04-19T23:31:13Z" name="newCompany" finished-at="2020-04-19T23:31:13Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newCompany -->
-        <test-method signature="newOpenings()[pri:0, instance:com.upraised.springmvc.controller.AppControllerTest@7880cdf3]" started-at="2020-04-19T15:26:46Z" name="newOpenings" finished-at="2020-04-19T15:26:46Z" duration-ms="0" status="PASS">
+        <test-method signature="newOpenings()[pri:0, instance:com.upraised.springmvc.controller.AppControllerTest@1c93084c]" started-at="2020-04-19T23:31:13Z" name="newOpenings" finished-at="2020-04-19T23:31:13Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newOpenings -->
-        <test-method signature="saveCompanyWithSuccess()[pri:0, instance:com.upraised.springmvc.controller.AppControllerTest@7880cdf3]" started-at="2020-04-19T15:26:46Z" name="saveCompanyWithSuccess" finished-at="2020-04-19T15:26:46Z" duration-ms="1" status="PASS">
+        <test-method signature="saveCompanyWithSuccess()[pri:0, instance:com.upraised.springmvc.controller.AppControllerTest@1c93084c]" started-at="2020-04-19T23:31:13Z" name="saveCompanyWithSuccess" finished-at="2020-04-19T23:31:13Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- saveCompanyWithSuccess -->
-        <test-method signature="saveCompanyWithValidationError()[pri:0, instance:com.upraised.springmvc.controller.AppControllerTest@7880cdf3]" started-at="2020-04-19T15:26:46Z" name="saveCompanyWithValidationError" finished-at="2020-04-19T15:26:46Z" duration-ms="1" status="PASS">
+        <test-method signature="saveCompanyWithValidationError()[pri:0, instance:com.upraised.springmvc.controller.AppControllerTest@1c93084c]" started-at="2020-04-19T23:31:13Z" name="saveCompanyWithValidationError" finished-at="2020-04-19T23:31:13Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- saveCompanyWithValidationError -->
-        <test-method signature="saveCompanyWithValidationErrorNonCorrectEmployee()[pri:0, instance:com.upraised.springmvc.controller.AppControllerTest@7880cdf3]" started-at="2020-04-19T15:26:46Z" name="saveCompanyWithValidationErrorNonCorrectEmployee" finished-at="2020-04-19T15:26:46Z" duration-ms="2" status="PASS">
+        <test-method signature="saveCompanyWithValidationErrorNonCorrectEmployee()[pri:0, instance:com.upraised.springmvc.controller.AppControllerTest@1c93084c]" started-at="2020-04-19T23:31:13Z" name="saveCompanyWithValidationErrorNonCorrectEmployee" finished-at="2020-04-19T23:31:13Z" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- saveCompanyWithValidationErrorNonCorrectEmployee -->
-        <test-method signature="saveCompanyWithValidationErrorNonUniqueCompany()[pri:0, instance:com.upraised.springmvc.controller.AppControllerTest@7880cdf3]" started-at="2020-04-19T15:26:46Z" name="saveCompanyWithValidationErrorNonUniqueCompany" finished-at="2020-04-19T15:26:46Z" duration-ms="1" status="PASS">
+        <test-method signature="saveCompanyWithValidationErrorNonUniqueCompany()[pri:0, instance:com.upraised.springmvc.controller.AppControllerTest@1c93084c]" started-at="2020-04-19T23:31:13Z" name="saveCompanyWithValidationErrorNonUniqueCompany" finished-at="2020-04-19T23:31:13Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- saveCompanyWithValidationErrorNonUniqueCompany -->
-        <test-method signature="saveOpeningsWithSuccess()[pri:0, instance:com.upraised.springmvc.controller.AppControllerTest@7880cdf3]" started-at="2020-04-19T15:26:46Z" name="saveOpeningsWithSuccess" finished-at="2020-04-19T15:26:46Z" duration-ms="1" status="PASS">
+        <test-method signature="saveOpeningsWithSuccess()[pri:0, instance:com.upraised.springmvc.controller.AppControllerTest@1c93084c]" started-at="2020-04-19T23:31:13Z" name="saveOpeningsWithSuccess" finished-at="2020-04-19T23:31:13Z" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- saveOpeningsWithSuccess -->
-        <test-method signature="saveOpeningsWithValidationError()[pri:0, instance:com.upraised.springmvc.controller.AppControllerTest@7880cdf3]" started-at="2020-04-19T15:26:46Z" name="saveOpeningsWithValidationError" finished-at="2020-04-19T15:26:46Z" duration-ms="1" status="PASS">
+        <test-method signature="saveOpeningsWithValidationError()[pri:0, instance:com.upraised.springmvc.controller.AppControllerTest@1c93084c]" started-at="2020-04-19T23:31:13Z" name="saveOpeningsWithValidationError" finished-at="2020-04-19T23:31:13Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- saveOpeningsWithValidationError -->
-        <test-method signature="saveOpeningsWithValidationErrorExistingCompany()[pri:0, instance:com.upraised.springmvc.controller.AppControllerTest@7880cdf3]" started-at="2020-04-19T15:26:46Z" name="saveOpeningsWithValidationErrorExistingCompany" finished-at="2020-04-19T15:26:46Z" duration-ms="1" status="PASS">
+        <test-method signature="saveOpeningsWithValidationErrorExistingCompany()[pri:0, instance:com.upraised.springmvc.controller.AppControllerTest@1c93084c]" started-at="2020-04-19T23:31:13Z" name="saveOpeningsWithValidationErrorExistingCompany" finished-at="2020-04-19T23:31:13Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- saveOpeningsWithValidationErrorExistingCompany -->
-        <test-method signature="saveOpeningsWithValidationErrorNonUniqueJobId()[pri:0, instance:com.upraised.springmvc.controller.AppControllerTest@7880cdf3]" started-at="2020-04-19T15:26:46Z" name="saveOpeningsWithValidationErrorNonUniqueJobId" finished-at="2020-04-19T15:26:46Z" duration-ms="0" status="PASS">
+        <test-method signature="saveOpeningsWithValidationErrorInvalidSeniority()[pri:0, instance:com.upraised.springmvc.controller.AppControllerTest@1c93084c]" started-at="2020-04-19T23:31:13Z" name="saveOpeningsWithValidationErrorInvalidSeniority" finished-at="2020-04-19T23:31:13Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveOpeningsWithValidationErrorInvalidSeniority -->
+        <test-method signature="saveOpeningsWithValidationErrorNonUniqueJobId()[pri:0, instance:com.upraised.springmvc.controller.AppControllerTest@1c93084c]" started-at="2020-04-19T23:31:13Z" name="saveOpeningsWithValidationErrorNonUniqueJobId" finished-at="2020-04-19T23:31:13Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- saveOpeningsWithValidationErrorNonUniqueJobId -->
-        <test-method signature="updateOpeningsWithSuccess()[pri:0, instance:com.upraised.springmvc.controller.AppControllerTest@7880cdf3]" started-at="2020-04-19T15:26:46Z" name="updateOpeningsWithSuccess" finished-at="2020-04-19T15:26:46Z" duration-ms="1" status="PASS">
+        <test-method signature="updateOpeningsWithSuccess()[pri:0, instance:com.upraised.springmvc.controller.AppControllerTest@1c93084c]" started-at="2020-04-19T23:31:13Z" name="updateOpeningsWithSuccess" finished-at="2020-04-19T23:31:13Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateOpeningsWithSuccess -->
-        <test-method signature="updateOpeningsWithValidationError()[pri:0, instance:com.upraised.springmvc.controller.AppControllerTest@7880cdf3]" started-at="2020-04-19T15:26:46Z" name="updateOpeningsWithValidationError" finished-at="2020-04-19T15:26:46Z" duration-ms="1" status="PASS">
+        <test-method signature="updateOpeningsWithValidationError()[pri:0, instance:com.upraised.springmvc.controller.AppControllerTest@1c93084c]" started-at="2020-04-19T23:31:13Z" name="updateOpeningsWithValidationError" finished-at="2020-04-19T23:31:13Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateOpeningsWithValidationError -->
-        <test-method signature="updateOpeningsWithValidationErrorNonUniqueSSN()[pri:0, instance:com.upraised.springmvc.controller.AppControllerTest@7880cdf3]" started-at="2020-04-19T15:26:46Z" name="updateOpeningsWithValidationErrorNonUniqueSSN" finished-at="2020-04-19T15:26:46Z" duration-ms="1" status="PASS">
+        <test-method signature="updateOpeningsWithValidationErrorInvalidSeniority()[pri:0, instance:com.upraised.springmvc.controller.AppControllerTest@1c93084c]" started-at="2020-04-19T23:31:13Z" name="updateOpeningsWithValidationErrorInvalidSeniority" finished-at="2020-04-19T23:31:13Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- updateOpeningsWithValidationErrorNonUniqueSSN -->
+        </test-method> <!-- updateOpeningsWithValidationErrorInvalidSeniority -->
+        <test-method signature="updateOpeningsWithValidationErrorNonUniqueJobId()[pri:0, instance:com.upraised.springmvc.controller.AppControllerTest@1c93084c]" started-at="2020-04-19T23:31:13Z" name="updateOpeningsWithValidationErrorNonUniqueJobId" finished-at="2020-04-19T23:31:13Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateOpeningsWithValidationErrorNonUniqueJobId -->
       </class> <!-- com.upraised.springmvc.controller.AppControllerTest -->
       <class name="com.upraised.springmvc.service.CompanyServiceImplTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.upraised.springmvc.service.CompanyServiceImplTest@7f552bd3]" started-at="2020-04-19T15:26:50Z" name="setUp" finished-at="2020-04-19T15:26:50Z" duration-ms="8" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.upraised.springmvc.service.CompanyServiceImplTest@460d0a57]" started-at="2020-04-19T23:31:17Z" name="setUp" finished-at="2020-04-19T23:31:17Z" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="deleteCompanyByName()[pri:0, instance:com.upraised.springmvc.service.CompanyServiceImplTest@7f552bd3]" started-at="2020-04-19T15:26:50Z" name="deleteCompanyByName" finished-at="2020-04-19T15:26:50Z" duration-ms="1" status="PASS">
+        <test-method signature="deleteCompanyByName()[pri:0, instance:com.upraised.springmvc.service.CompanyServiceImplTest@460d0a57]" started-at="2020-04-19T23:31:17Z" name="deleteCompanyByName" finished-at="2020-04-19T23:31:17Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteCompanyByName -->
-        <test-method signature="findAllCompanies()[pri:0, instance:com.upraised.springmvc.service.CompanyServiceImplTest@7f552bd3]" started-at="2020-04-19T15:26:50Z" name="findAllCompanies" finished-at="2020-04-19T15:26:50Z" duration-ms="1" status="PASS">
+        <test-method signature="findAllCompanies()[pri:0, instance:com.upraised.springmvc.service.CompanyServiceImplTest@460d0a57]" started-at="2020-04-19T23:31:17Z" name="findAllCompanies" finished-at="2020-04-19T23:31:17Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findAllCompanies -->
-        <test-method signature="findById()[pri:0, instance:com.upraised.springmvc.service.CompanyServiceImplTest@7f552bd3]" started-at="2020-04-19T15:26:50Z" name="findById" finished-at="2020-04-19T15:26:50Z" duration-ms="1" status="PASS">
+        <test-method signature="findById()[pri:0, instance:com.upraised.springmvc.service.CompanyServiceImplTest@460d0a57]" started-at="2020-04-19T23:31:17Z" name="findById" finished-at="2020-04-19T23:31:17Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findById -->
-        <test-method signature="findCompanyByName()[pri:0, instance:com.upraised.springmvc.service.CompanyServiceImplTest@7f552bd3]" started-at="2020-04-19T15:26:50Z" name="findCompanyByName" finished-at="2020-04-19T15:26:50Z" duration-ms="0" status="PASS">
+        <test-method signature="findCompanyByName()[pri:0, instance:com.upraised.springmvc.service.CompanyServiceImplTest@460d0a57]" started-at="2020-04-19T23:31:17Z" name="findCompanyByName" finished-at="2020-04-19T23:31:17Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findCompanyByName -->
-        <test-method signature="isCompanyByNameUnique()[pri:0, instance:com.upraised.springmvc.service.CompanyServiceImplTest@7f552bd3]" started-at="2020-04-19T15:26:50Z" name="isCompanyByNameUnique" finished-at="2020-04-19T15:26:50Z" duration-ms="1" status="PASS">
+        <test-method signature="isCompanyByNameUnique()[pri:0, instance:com.upraised.springmvc.service.CompanyServiceImplTest@460d0a57]" started-at="2020-04-19T23:31:17Z" name="isCompanyByNameUnique" finished-at="2020-04-19T23:31:17Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isCompanyByNameUnique -->
-        <test-method signature="listCompaniesByName()[pri:0, instance:com.upraised.springmvc.service.CompanyServiceImplTest@7f552bd3]" started-at="2020-04-19T15:26:50Z" name="listCompaniesByName" finished-at="2020-04-19T15:26:50Z" duration-ms="1" status="PASS">
+        <test-method signature="listCompaniesByName()[pri:0, instance:com.upraised.springmvc.service.CompanyServiceImplTest@460d0a57]" started-at="2020-04-19T23:31:17Z" name="listCompaniesByName" finished-at="2020-04-19T23:31:17Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- listCompaniesByName -->
-        <test-method signature="listCompaniesByNameWithError()[pri:0, instance:com.upraised.springmvc.service.CompanyServiceImplTest@7f552bd3]" started-at="2020-04-19T15:26:50Z" name="listCompaniesByNameWithError" finished-at="2020-04-19T15:26:50Z" duration-ms="4" status="PASS">
+        <test-method signature="listCompaniesByNameWithError()[pri:0, instance:com.upraised.springmvc.service.CompanyServiceImplTest@460d0a57]" started-at="2020-04-19T23:31:17Z" name="listCompaniesByNameWithError" finished-at="2020-04-19T23:31:17Z" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- listCompaniesByNameWithError -->
-        <test-method signature="saveCompany()[pri:0, instance:com.upraised.springmvc.service.CompanyServiceImplTest@7f552bd3]" started-at="2020-04-19T15:26:50Z" name="saveCompany" finished-at="2020-04-19T15:26:50Z" duration-ms="1" status="PASS">
+        <test-method signature="saveCompany()[pri:0, instance:com.upraised.springmvc.service.CompanyServiceImplTest@460d0a57]" started-at="2020-04-19T23:31:17Z" name="saveCompany" finished-at="2020-04-19T23:31:17Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- saveCompany -->

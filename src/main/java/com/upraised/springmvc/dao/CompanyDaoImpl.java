@@ -9,8 +9,10 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+import static com.upraised.springmvc.commons.CompanyConstants.*;
+
 @Component
-@Repository("companyDao")
+@Repository(COMPANY_DAO)
 public class CompanyDaoImpl extends AbstractDao<Integer, Company> implements CompanyDao{
 
     public Company findById(int id) {
@@ -22,8 +24,8 @@ public class CompanyDaoImpl extends AbstractDao<Integer, Company> implements Com
     }
 
     public void deleteCompanyByName(String name) {
-        Query query = getSession().createSQLQuery("delete from Company where name = :name");
-        query.setString("name", name);
+        Query query = getSession().createSQLQuery(DELETE_SQL_QUERY);
+        query.setString(NAME, name);
         query.executeUpdate();
     }
 
@@ -41,7 +43,7 @@ public class CompanyDaoImpl extends AbstractDao<Integer, Company> implements Com
      */
     public Company findCompanyByName(String name) {
         Criteria criteria = createEntityCriteria();
-        criteria.add(Restrictions.eq("name", name));
+        criteria.add(Restrictions.eq(NAME, name));
         return (Company) criteria.uniqueResult();
     }
 }

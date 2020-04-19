@@ -188,13 +188,21 @@ public class AppControllerTest {
     }
 
     @Test
+    public void saveOpeningsWithValidationErrorInvalidSeniority(){
+        when(result.hasErrors()).thenReturn(false);
+        when(openingsService.isOpeningsByJobIdUnique(anyInt(), anyInt())).thenReturn(true);
+        when(companyService.findCompanyByName(anyString())).thenReturn(null);
+        Assert.assertEquals(appController.saveOpenings(openings.get(0), result, model), "registrationopenings");
+    }
+
+    @Test
     public void saveOpeningsWithSuccess(){
         Company company = companies.get(0);
         when(result.hasErrors()).thenReturn(false);
         when(openingsService.isOpeningsByJobIdUnique(anyInt(), anyInt())).thenReturn(true);
         when(companyService.findCompanyByName(anyString())).thenReturn(company);
-        Assert.assertEquals(appController.saveOpenings(openings.get(0), result, model), "redirect:/openings");
-        Assert.assertEquals(model.get("success"), "Opening 1 registered successfully");
+        Assert.assertEquals(appController.saveOpenings(openings.get(1), result, model), "redirect:/openings");
+        Assert.assertEquals(model.get("success"), "Opening 2 registered successfully");
     }
 
     @Test
@@ -215,10 +223,17 @@ public class AppControllerTest {
     }
 
     @Test
-    public void updateOpeningsWithValidationErrorNonUniqueSSN(){
+    public void updateOpeningsWithValidationErrorNonUniqueJobId(){
         when(result.hasErrors()).thenReturn(false);
         when(openingsService.isOpeningsByJobIdUnique(anyInt(), anyInt())).thenReturn(false);
         Assert.assertEquals(appController.updateOpenings(openings.get(0), result, model, 0), "registrationopenings");
+    }
+
+    @Test
+    public void updateOpeningsWithValidationErrorInvalidSeniority(){
+        when(result.hasErrors()).thenReturn(false);
+        when(openingsService.isOpeningsByJobIdUnique(anyInt(), anyInt())).thenReturn(true);
+        Assert.assertEquals(appController.saveOpenings(openings.get(0), result, model), "registrationopenings");
     }
 
     @Test
@@ -226,8 +241,8 @@ public class AppControllerTest {
         when(result.hasErrors()).thenReturn(false);
         when(openingsService.isOpeningsByJobIdUnique(anyInt(), anyInt())).thenReturn(true);
         doNothing().when(openingsService).updateOpenings(any(Openings.class));
-        Assert.assertEquals(appController.updateOpenings(openings.get(0), result, model, 0), "allopenings");
-        Assert.assertEquals(model.get("success"), "Opening 1 updated successfully");
+        Assert.assertEquals(appController.updateOpenings(openings.get(1), result, model, 0), "redirect:/openings");
+        Assert.assertEquals(model.get("success"), "Opening 2 updated successfully");
     }
 
 
@@ -290,7 +305,7 @@ public class AppControllerTest {
 
         Openings openings2 = new Openings();
         openings2.setJob_id(2);
-        openings2.setSeniority_level("test_sl_2");
+        openings2.setSeniority_level("senior");
         openings2.setLocation("test_location2");
         openings2.setSalary(BigDecimal.valueOf(101.0));
         openings2.setSkills_required("test_skills2");

@@ -77,7 +77,7 @@
                         <form:errors path="location" cssClass="error"/>
                     </div>
                     <div class="input-group">
-                        <form:input class="input--style-2" type="text" placeholder="Seniority Level" name="seniority_level" path="seniority_level" id="seniority_level"/>
+                        <form:input class="input--style-2" type="text" placeholder="Seniority Level, possible values : senior, associate or entry" name="seniority_level" path="seniority_level" id="seniority_level"/>
                         <form:errors path="seniority_level" cssClass="error"/>
                     </div>
                     <div class="input-group">
@@ -100,10 +100,14 @@
                         <form:input class="input--style-2" type="text" placeholder="Posting Date" name="postingDate" path="postingDate" id="postingDate"/>
                         <form:errors path="postingDate" cssClass="error"/>
                     </div>
-                    <div class="input-group">
-                        <form:input class="input--style-2" type="text" placeholder="Company" name="company" path="company" id="company"/>
-                        <form:errors path="company" cssClass="error"/>
-                    </div>
+                    <c:choose>
+                        <c:when test="${not edit}">
+                            <div class="input-group">
+                                <form:input class="input--style-2" type="text" placeholder="Company" name="company" path="company" id="company"/>
+                                <form:errors path="company" cssClass="error"/>
+                            </div>
+                        </c:when>
+                    </c:choose>
                     <div class="p-t-30">
                         <c:choose>
                             <c:when test="${edit}">

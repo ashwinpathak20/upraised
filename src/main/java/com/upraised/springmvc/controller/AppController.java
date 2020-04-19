@@ -14,9 +14,7 @@ import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.InitBinder;
 
 import javax.validation.Valid;
 import java.util.Map;
@@ -172,6 +170,12 @@ public class AppController {
             return "registrationopenings";
         }
 
+        if(openings.getSeniority_level()!="senior" && openings.getSeniority_level()!="associate" && openings.getSeniority_level()!="entry"){
+            FieldError error =new FieldError("openings","seniority_level", messageSource.getMessage("non.valid.level", new String[]{(String.valueOf(openings.getSeniority_level()))}, Locale.getDefault()));
+            result.addError(error);
+            return "registrationopenings";
+        }
+
         openingsService.saveOpenings(openings);
         model.addAttribute("success", "Opening " + openings.getJob_id() + " registered successfully");
         return "redirect:/openings";
@@ -206,10 +210,16 @@ public class AppController {
             return "registrationopenings";
         }
 
+        if(openings.getSeniority_level()!="senior" && openings.getSeniority_level()!="associate" && openings.getSeniority_level()!="entry"){
+            FieldError error =new FieldError("openings","seniority_level", messageSource.getMessage("non.valid.level", new String[]{(String.valueOf(openings.getSeniority_level()))}, Locale.getDefault()));
+            result.addError(error);
+            return "registrationopenings";
+        }
+
         openingsService.updateOpenings(openings);
 
         model.addAttribute("success", "Opening " + openings.getJob_id() + " updated successfully");
-        return "allopenings";
+        return "redirect:/openings";
     }
 
 

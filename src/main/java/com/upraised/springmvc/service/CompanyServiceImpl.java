@@ -13,8 +13,13 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import static com.upraised.springmvc.commons.CompanyConstants.COMPANY_SERVICE;
+
+/*
+ * This class is responsible for fetching data for Company.
+ */
 @Component
-@Service("companyService")
+@Service(COMPANY_SERVICE)
 @Transactional
 public class CompanyServiceImpl implements CompanyService{
 
@@ -23,16 +28,28 @@ public class CompanyServiceImpl implements CompanyService{
 
     Logger logger = Logger.getLogger(CompanyServiceImpl.class.getName());
 
+    /*
+     * Finds company by id.
+     */
     public Company findById(int id) {
         return dao.findById(id);
     }
 
+    /*
+     * Saves company instance.
+     */
     public void saveCompany(Company company) {
         dao.saveCompany(company);
     }
 
+    /*
+     * Deletes company by company name.
+     */
     public void deleteCompanyByName(String name) { dao.deleteCompanyByName(name); }
 
+    /*
+     * Finds all the companies.
+     */
     public List<Company> findAllCompanies() {
         return dao.findAllCompanies();
     }
@@ -45,6 +62,9 @@ public class CompanyServiceImpl implements CompanyService{
         return company;
     }
 
+    /*
+     * Checks if company is unique by company_name.
+     */
     public boolean isCompanyByNameUnique(Integer id, String name) {
         Company company = findCompanyByName(name);
         return ( company == null || ((id != null) && (company.getId() == id)));
