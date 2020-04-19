@@ -1,6 +1,7 @@
 package com.upraised.springmvc.model;
 
 import org.hibernate.annotations.Type;
+import org.hibernate.validator.constraints.URL;
 import org.joda.time.LocalDate;
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -25,37 +26,32 @@ public class Openings {
     @Column(name = "job_id")
     private Integer job_id;
 
+    @NotNull
     @Size(min=3, max=50)
     @Column(name = "job_title", nullable = false)
     private String job_title;
 
-    @Size(min=3, max=50)
     @Column(name = "seniority_level")
     private String seniority_level;
 
-    @Size(min=3, max=20)
     @Column(name = "location", nullable = false)
     private String location;
 
-    @Size(min=3, max=300)
     @Column(name = "job_description")
     private String job_description;
 
-    @Size(min=3, max=300)
     @Column(name = "skills_required")
     private String skills_required;
 
-    @Size(min=3, max=50)
     @Column(name = "job_link")
+    @URL(regexp = "^(http://|ftp://|https://)(www).*.*")
     private String job_link;
 
-    @NotNull
     @DateTimeFormat(pattern="dd/MM/yyyy")
     @Column(name = "date_of_posting", nullable = false)
     @Type(type="org.jadira.usertype.dateandtime.joda.PersistentLocalDate")
     private LocalDate postingDate;
 
-    @NotNull
     @Digits(integer=12, fraction=2)
     @Column(name = "salary")
     private BigDecimal salary;

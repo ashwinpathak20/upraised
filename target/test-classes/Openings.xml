@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <openings id="1" JOB_TITLE="test_opening1" JOB_ID="1" COMPANY="test_company1" SALARY="10" LOCATION="location1" DATE_OF_POSTING="10/04/2020"/>
+    <openings id="2" JOB_TITLE="test_opening2" JOB_ID="2" COMPANY="test_company2" SALARY="20" LOCATION="location2" DATE_OF_POSTING="10/04/2020"/>
+</dataset>

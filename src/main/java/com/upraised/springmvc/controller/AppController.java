@@ -16,9 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.RequestMethod;
-import com.upraised.springmvc.util.FileValidator;
 import org.springframework.web.bind.annotation.InitBinder;
-import org.springframework.web.util.NestedServletException;
 
 import javax.validation.Valid;
 import java.util.Map;
@@ -38,14 +36,6 @@ public class AppController {
 
     @Autowired
     MessageSource messageSource;
-
-    @Autowired
-    FileValidator fileValidator;
-
-    @InitBinder("fileBucket")
-    protected void initBinder(WebDataBinder binder) {
-        binder.setValidator(fileValidator);
-    }
 
     /*
      * This method will list all existing companies.
@@ -123,9 +113,16 @@ public class AppController {
             result.addError(error);
             return "registrationcompanies";
         }
+
+        if(company.getEmployees_min() > company.getEmployees_max()){
+            FieldError error =new FieldError("company","employees_max", messageSource.getMessage("non.correct.employees", new String[]{company.getName()}, Locale.getDefault()));
+            result.addError(error);
+            return "registrationcompanies";
+        }
+
         companyService.saveCompany(company);
         model.addAttribute("success", "Company " + company.getName() + " registered successfully");
-        return "listCompanies";
+        return "redirect:/companies";
     }
 
     /*
@@ -177,7 +174,7 @@ public class AppController {
 
         openingsService.saveOpenings(openings);
         model.addAttribute("success", "Opening " + openings.getJob_id() + " registered successfully");
-        return "allopenings";
+        return "redirect:/openings";
     }
 
     /*

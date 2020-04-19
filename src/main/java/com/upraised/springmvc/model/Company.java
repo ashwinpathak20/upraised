@@ -1,5 +1,7 @@
 package com.upraised.springmvc.model;
 
+import org.hibernate.validator.constraints.URL;
+
 import javax.persistence.*;
 import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotNull;
@@ -32,27 +34,22 @@ public class Company {
     @Column(name = "location")
     private String location;
 
-    @Size(min=3, max=50)
     @Column(name = "founder_name")
     private String founder_name;
 
-    @Size(min=3, max=300)
     @Column(name = "founder_desc")
     private String founder_desc;
 
-    @Size(min=3, max=500)
     @Column(name = "company_desc")
     private String company_desc;
 
-    @Size(min=3, max=100)
+    @URL(regexp = "^(http://|ftp://|https://)(www).*.*")
     @Column(name = "company_link")
     private String company_link;
 
-    @Size(min=3, max=50)
     @Column(name = "intro")
     private String intro;
 
-    @Size(min=3, max=50)
     @Column(name = "domain")
     private String domain;
 
@@ -66,7 +63,7 @@ public class Company {
 
     @Lob @Basic(fetch = FetchType.LAZY)
     @Column(name="logo")
-    private Blob logo;
+    private byte[] logo;
 
     public int getId() {
         return id;
@@ -116,7 +113,7 @@ public class Company {
 
     public void setEmployees_max(int employees_max) { this.employees_max = employees_max; }
 
-    public Blob getLogo() { return logo; }
+    public byte[] getLogo() { return logo; }
 
-    public void setLogo(Blob logo) { this.logo = logo; }
+    public void setLogo(byte[] logo) { this.logo = logo; }
 }

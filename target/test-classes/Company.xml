@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <company id="1" NAME="test_company1" COMPANY_TYPE="test_type1" LOCATION="location1" EMPLOYEES_MAX="10" EMPLOYEES_MIN="10" />
+    <company id="2" NAME="test_company2" COMPANY_TYPE="test_type2" LOCATION="location2" EMPLOYEES_MAX="20" EMPLOYEES_MIN="10" />
+</dataset>

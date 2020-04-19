@@ -68,13 +68,11 @@ public class OpeningsDaoImpl extends AbstractDao<Integer, Openings> implements O
             }
         }
         List<Openings> openings = (List<Openings>) criteria.list();
-        if(!map.containsKey("salary")){
+        if(map.get("salary") == null || map.get("salary").isEmpty()){
             return openings;
         }
         List<Openings> filteredOpenings = new ArrayList<>();
         BigDecimal salary = new BigDecimal(map.get("salary"));
-        System.out.println("Ashwink");
-        System.out.println(salary);
         for(Openings opening : openings) {
             if(salary.compareTo(opening.getSalary())!=1){
                 filteredOpenings.add(opening);

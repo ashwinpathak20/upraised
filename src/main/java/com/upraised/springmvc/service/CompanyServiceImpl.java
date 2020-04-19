@@ -10,6 +10,9 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.ArrayList;
 import java.util.List;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 @Component
 @Service("companyService")
 @Transactional
@@ -17,6 +20,8 @@ public class CompanyServiceImpl implements CompanyService{
 
     @Autowired
     private CompanyDao dao;
+
+    Logger logger = Logger.getLogger(CompanyServiceImpl.class.getName());
 
     public Company findById(int id) {
         return dao.findById(id);
@@ -49,11 +54,16 @@ public class CompanyServiceImpl implements CompanyService{
      * This method lists companies.
      */
     public List<String> listCompaniesByName() {
-        List<Company> companies = findAllCompanies();
-        List<String> company_names = new ArrayList<>();
-        for (Company company:companies) {
-            company_names.add(company.getName());
+        try {
+            List<Company> companies = findAllCompanies();
+            List<String> company_names = new ArrayList<>();
+            for (Company company : companies) {
+                company_names.add(company.getName());
+            }
+            return company_names;
+        } catch (final Exception e) {
+            logger.log(Level.WARNING, "Error in retrieving companies by name");
         }
-        return company_names;
+        return null;
     }
 }

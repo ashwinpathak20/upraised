@@ -1,0 +1,6 @@
+com/upraised/springmvc/dao/EntityDaoImplTest.class
+com/upraised/springmvc/service/OpeningsServiceImplTest.class
+com/upraised/springmvc/configuration/HibernateTestConfiguration.class
+com/upraised/springmvc/service/CompanyServiceImplTest.class
+com/upraised/springmvc/dao/CompanyDaoImplTest.class
+com/upraised/springmvc/controller/AppControllerTest.class
