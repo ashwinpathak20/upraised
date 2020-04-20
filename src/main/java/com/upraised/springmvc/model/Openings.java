@@ -67,6 +67,8 @@ public class Openings {
         return id;
     }
 
+    public void setId(int id) { this.id = id; }
+
     public Integer getJob_id() {
         return job_id;
     }

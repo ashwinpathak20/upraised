@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="45" failures="0" name="TestSuite" time="0.263" errors="0" skipped="0">
+<testsuite tests="45" failures="0" name="TestSuite" time="0.249" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.5+10-post-Ubuntu-0ubuntu1.118.04"/>
@@ -61,49 +61,49 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.upraised.springmvc.controller.AppControllerTest" name="deleteOpening" time="0.026"/>
+  <testcase classname="com.upraised.springmvc.controller.AppControllerTest" name="deleteOpening" time="0.013"/>
   <testcase classname="com.upraised.springmvc.controller.AppControllerTest" name="editCompanyandTitle" time="0.04"/>
   <testcase classname="com.upraised.springmvc.controller.AppControllerTest" name="getCompanies" time="0.007"/>
-  <testcase classname="com.upraised.springmvc.controller.AppControllerTest" name="getCompanyAndOpeningsByName" time="0.003"/>
-  <testcase classname="com.upraised.springmvc.controller.AppControllerTest" name="getOpeningsByFilterWithSuccess" time="0.002"/>
+  <testcase classname="com.upraised.springmvc.controller.AppControllerTest" name="getCompanyAndOpeningsByName" time="0.002"/>
+  <testcase classname="com.upraised.springmvc.controller.AppControllerTest" name="getOpeningsByFilterWithSuccess" time="0.001"/>
   <testcase classname="com.upraised.springmvc.controller.AppControllerTest" name="getOpeningsByFilterWithValidationError" time="0.001"/>
   <testcase classname="com.upraised.springmvc.controller.AppControllerTest" name="listOpenings" time="0.001"/>
-  <testcase classname="com.upraised.springmvc.controller.AppControllerTest" name="newCompany" time="0"/>
+  <testcase classname="com.upraised.springmvc.controller.AppControllerTest" name="newCompany" time="0.001"/>
   <testcase classname="com.upraised.springmvc.controller.AppControllerTest" name="newOpenings" time="0.001"/>
   <testcase classname="com.upraised.springmvc.controller.AppControllerTest" name="saveCompanyWithSuccess" time="0.002"/>
   <testcase classname="com.upraised.springmvc.controller.AppControllerTest" name="saveCompanyWithValidationError" time="0.001"/>
-  <testcase classname="com.upraised.springmvc.controller.AppControllerTest" name="saveCompanyWithValidationErrorNonCorrectEmployee" time="0.003"/>
+  <testcase classname="com.upraised.springmvc.controller.AppControllerTest" name="saveCompanyWithValidationErrorNonCorrectEmployee" time="0.002"/>
   <testcase classname="com.upraised.springmvc.controller.AppControllerTest" name="saveCompanyWithValidationErrorNonUniqueCompany" time="0.001"/>
-  <testcase classname="com.upraised.springmvc.controller.AppControllerTest" name="saveOpeningsWithSuccess" time="0.002"/>
+  <testcase classname="com.upraised.springmvc.controller.AppControllerTest" name="saveOpeningsWithSuccess" time="0.001"/>
   <testcase classname="com.upraised.springmvc.controller.AppControllerTest" name="saveOpeningsWithValidationError" time="0.001"/>
-  <testcase classname="com.upraised.springmvc.controller.AppControllerTest" name="saveOpeningsWithValidationErrorExistingCompany" time="0.002"/>
-  <testcase classname="com.upraised.springmvc.controller.AppControllerTest" name="saveOpeningsWithValidationErrorInvalidSeniority" time="0.001"/>
+  <testcase classname="com.upraised.springmvc.controller.AppControllerTest" name="saveOpeningsWithValidationErrorExistingCompany" time="0.001"/>
+  <testcase classname="com.upraised.springmvc.controller.AppControllerTest" name="saveOpeningsWithValidationErrorInvalidSeniority" time="0.002"/>
   <testcase classname="com.upraised.springmvc.controller.AppControllerTest" name="saveOpeningsWithValidationErrorNonUniqueJobId" time="0.001"/>
-  <testcase classname="com.upraised.springmvc.controller.AppControllerTest" name="updateOpeningsWithSuccess" time="0.002"/>
+  <testcase classname="com.upraised.springmvc.controller.AppControllerTest" name="updateOpeningsWithSuccess" time="0.001"/>
   <testcase classname="com.upraised.springmvc.controller.AppControllerTest" name="updateOpeningsWithValidationError" time="0"/>
   <testcase classname="com.upraised.springmvc.controller.AppControllerTest" name="updateOpeningsWithValidationErrorInvalidSeniority" time="0.001"/>
   <testcase classname="com.upraised.springmvc.controller.AppControllerTest" name="updateOpeningsWithValidationErrorNonUniqueJobId" time="0.001"/>
-  <testcase classname="com.upraised.springmvc.dao.CompanyDaoImplTest" name="deleteCompanyByInvalidName" time="0.101"/>
+  <testcase classname="com.upraised.springmvc.dao.CompanyDaoImplTest" name="deleteCompanyByInvalidName" time="0.089"/>
   <testcase classname="com.upraised.springmvc.dao.CompanyDaoImplTest" name="deleteCompanyByName" time="0.005"/>
-  <testcase classname="com.upraised.springmvc.dao.CompanyDaoImplTest" name="findAllCompanies" time="0.002"/>
-  <testcase classname="com.upraised.springmvc.dao.CompanyDaoImplTest" name="findById" time="0.01"/>
-  <testcase classname="com.upraised.springmvc.dao.CompanyDaoImplTest" name="findCompanyByName" time="0.012"/>
-  <testcase classname="com.upraised.springmvc.dao.CompanyDaoImplTest" name="saveCompany" time="0.02"/>
-  <testcase classname="com.upraised.springmvc.service.CompanyServiceImplTest" name="deleteCompanyByName" time="0.001"/>
-  <testcase classname="com.upraised.springmvc.service.CompanyServiceImplTest" name="findAllCompanies" time="0"/>
-  <testcase classname="com.upraised.springmvc.service.CompanyServiceImplTest" name="findById" time="0.001"/>
-  <testcase classname="com.upraised.springmvc.service.CompanyServiceImplTest" name="findCompanyByName" time="0"/>
+  <testcase classname="com.upraised.springmvc.dao.CompanyDaoImplTest" name="findAllCompanies" time="0.004"/>
+  <testcase classname="com.upraised.springmvc.dao.CompanyDaoImplTest" name="findById" time="0.013"/>
+  <testcase classname="com.upraised.springmvc.dao.CompanyDaoImplTest" name="findCompanyByName" time="0.015"/>
+  <testcase classname="com.upraised.springmvc.dao.CompanyDaoImplTest" name="saveCompany" time="0.021"/>
+  <testcase classname="com.upraised.springmvc.service.CompanyServiceImplTest" name="deleteCompanyByName" time="0"/>
+  <testcase classname="com.upraised.springmvc.service.CompanyServiceImplTest" name="findAllCompanies" time="0.001"/>
+  <testcase classname="com.upraised.springmvc.service.CompanyServiceImplTest" name="findById" time="0"/>
+  <testcase classname="com.upraised.springmvc.service.CompanyServiceImplTest" name="findCompanyByName" time="0.002"/>
   <testcase classname="com.upraised.springmvc.service.CompanyServiceImplTest" name="isCompanyByNameUnique" time="0"/>
   <testcase classname="com.upraised.springmvc.service.CompanyServiceImplTest" name="listCompaniesByName" time="0.001"/>
-  <testcase classname="com.upraised.springmvc.service.CompanyServiceImplTest" name="listCompaniesByNameWithError" time="0.006"/>
-  <testcase classname="com.upraised.springmvc.service.CompanyServiceImplTest" name="saveCompany" time="0.001"/>
-  <testcase classname="com.upraised.springmvc.service.OpeningsServiceImplTest" name="deleteOpeningsByJobId" time="0"/>
-  <testcase classname="com.upraised.springmvc.service.OpeningsServiceImplTest" name="filterOpenings" time="0"/>
-  <testcase classname="com.upraised.springmvc.service.OpeningsServiceImplTest" name="findAllOpenings" time="0.003"/>
+  <testcase classname="com.upraised.springmvc.service.CompanyServiceImplTest" name="listCompaniesByNameWithError" time="0.005"/>
+  <testcase classname="com.upraised.springmvc.service.CompanyServiceImplTest" name="saveCompany" time="0"/>
+  <testcase classname="com.upraised.springmvc.service.OpeningsServiceImplTest" name="deleteOpeningsByJobId" time="0.001"/>
+  <testcase classname="com.upraised.springmvc.service.OpeningsServiceImplTest" name="filterOpenings" time="0.001"/>
+  <testcase classname="com.upraised.springmvc.service.OpeningsServiceImplTest" name="findAllOpenings" time="0"/>
   <testcase classname="com.upraised.springmvc.service.OpeningsServiceImplTest" name="findById" time="0"/>
   <testcase classname="com.upraised.springmvc.service.OpeningsServiceImplTest" name="findOpeningsByCompany" time="0"/>
-  <testcase classname="com.upraised.springmvc.service.OpeningsServiceImplTest" name="findOpeningsByJobId" time="0"/>
-  <testcase classname="com.upraised.springmvc.service.OpeningsServiceImplTest" name="isOpeningsByJobIdUnique" time="0"/>
+  <testcase classname="com.upraised.springmvc.service.OpeningsServiceImplTest" name="findOpeningsByJobId" time="0.001"/>
+  <testcase classname="com.upraised.springmvc.service.OpeningsServiceImplTest" name="isOpeningsByJobIdUnique" time="0.008"/>
   <testcase classname="com.upraised.springmvc.service.OpeningsServiceImplTest" name="saveOpenings" time="0"/>
-  <testcase classname="com.upraised.springmvc.service.OpeningsServiceImplTest" name="updateOpenings" time="0.001"/>
+  <testcase classname="com.upraised.springmvc.service.OpeningsServiceImplTest" name="updateOpenings" time="0"/>
 </testsuite>

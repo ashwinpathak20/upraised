@@ -249,7 +249,7 @@ public class AppControllerTest {
     @Test
     public void deleteOpening(){
         doNothing().when(openingsService).deleteOpeningsByJobId(anyInt());
-        Assert.assertEquals(appController.deleteOpening(1), "redirect:/allopenings");
+        Assert.assertEquals(appController.deleteOpening(1), "redirect:/openings");
     }
 
     public Filters getFilters(){

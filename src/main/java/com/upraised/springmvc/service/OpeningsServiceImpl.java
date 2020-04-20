@@ -52,6 +52,7 @@ public class OpeningsServiceImpl implements OpeningsService{
             entity.setSalary(openings.getSalary());
             entity.setLocation(openings.getLocation());
             entity.setSeniority_level(openings.getSeniority_level());
+            entity.setCompany(openings.getCompany());
         }
     }
 

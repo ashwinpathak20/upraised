@@ -170,7 +170,7 @@ public class AppController {
             return "registrationopenings";
         }
 
-        if(openings.getSeniority_level()!="senior" && openings.getSeniority_level()!="associate" && openings.getSeniority_level()!="entry"){
+        if(!openings.getSeniority_level().equals("senior") && !openings.getSeniority_level().equals("associate") && !openings.getSeniority_level().equals("entry")){
             FieldError error =new FieldError("openings","seniority_level", messageSource.getMessage("non.valid.level", new String[]{(String.valueOf(openings.getSeniority_level()))}, Locale.getDefault()));
             result.addError(error);
             return "registrationopenings";
@@ -205,12 +205,12 @@ public class AppController {
         }
 
         if(!openingsService.isOpeningsByJobIdUnique(openings.getId(), openings.getJob_id())){
-            FieldError error =new FieldError("openings","job_id", messageSource.getMessage("non.unique.openings", new Integer[]{openings.getJob_id()}, Locale.getDefault()));
+            FieldError error =new FieldError("openings","job_id", messageSource.getMessage("non.unique.job_id", new String[]{(String.valueOf(openings.getJob_id()))}, Locale.getDefault()));
             result.addError(error);
             return "registrationopenings";
         }
 
-        if(openings.getSeniority_level()!="senior" && openings.getSeniority_level()!="associate" && openings.getSeniority_level()!="entry"){
+        if(!openings.getSeniority_level().equals("senior") && !openings.getSeniority_level().equals("associate") && !openings.getSeniority_level().equals("entry")){
             FieldError error =new FieldError("openings","seniority_level", messageSource.getMessage("non.valid.level", new String[]{(String.valueOf(openings.getSeniority_level()))}, Locale.getDefault()));
             result.addError(error);
             return "registrationopenings";
@@ -229,6 +229,6 @@ public class AppController {
     @RequestMapping(value = { "/delete-{job_id}-opening" }, method = RequestMethod.GET)
     public String deleteOpening(@PathVariable Integer job_id) {
         openingsService.deleteOpeningsByJobId(job_id);
-        return "redirect:/allopenings";
+        return "redirect:/openings";
     }
 }

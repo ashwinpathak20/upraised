@@ -63,7 +63,7 @@
                     <h2>Add New Job Opening</h2>
                     <form:form method="POST" modelAttribute="openings">
                     <form:errors path = "*" cssClass = "errorblock" element = "div" />
-                    <form:input type="hidden" path="id" id="id"/>
+                    <form:input type="hidden" path="id" id="id" />
                     <div class="input-group">
                         <form:input class="input--style-2" type="text" placeholder="Job Id" name="job_id" path="job_id" id="job_id"/>
                         <form:errors path="job_id" cssClass="error"/>
@@ -107,6 +107,9 @@
                                 <form:errors path="company" cssClass="error"/>
                             </div>
                         </c:when>
+                        <c:otherwise>
+                            <form:input type="hidden" path="company" id="company"/>
+                        </c:otherwise>
                     </c:choose>
                     <div class="p-t-30">
                         <c:choose>
